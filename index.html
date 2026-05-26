@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- META -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LA Luxury Car Rental - Exotic and luxury car rentals in Los Angeles.">
+
+<title>LA Luxury Car Rental</title>
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="siteHeader">
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">
+            <div class="logo-box">LA</div>
+            LA Luxury Car Rental
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div id="siteNav">
+            <ul>
+                <li><a href="index.html"   data-page="index.html">Home</a></li>
+                <li><a href="fleet.html"   data-page="fleet.html">Fleet</a></li>
+                <li><a href="about.html"   data-page="about.html">About</a></li>
+                <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- PROMO BANNER (hidden with display:none when dismissed) -->
+<div class="promo-bar" id="promoBanner">
+    <div class="wrap promo-row">
+        <p>🚗 <strong>Summer Special:</strong> 10% off all bookings over 3 days. Use code <strong>LALU10</strong></p>
+        <button class="promo-x" id="dismissPromo" aria-label="Dismiss banner">✕</button>
+    </div>
+</div>
+
+
+<!-- HERO SECTION -->
+<main>
+<section class="hero" id="home">
+
+    <div class="hero-bg"></div>
+    <div class="hero-dim"></div>
+
+    <div class="hero-inner">
+
+        <!-- LEFT - text -->
+        <div class="hero-text">
+            <span class="hero-label">Los Angeles · Beverly Hills · Las Vegas</span>
+            <h1>Drive <span class="gold">Extraordinary</span></h1>
+            <p class="hero-sub">Premium exotic and luxury car rentals with guaranteed vehicle delivery. The exact car you book. Every time.</p>
+            <div class="btn-row">
+                <a href="fleet.html" class="btn btn-gold">Browse Our Fleet</a>
+                <a href="contact.html" class="btn btn-outline">Make an Enquiry</a>
+            </div>
+        </div>
+
+        <!-- RIGHT - image slider -->
+        <div class="hero-slide-box">
+            <img src="images/hero1.jpg" alt="Exotic car on the road" id="heroSlide">
+            <div class="slide-controls">
+                <div class="dots">
+                    <div class="dot on"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div>
+                    <button class="s-btn" id="prevSlide">&#8592;</button>
+                    <button class="s-btn" id="nextSlide">&#8594;</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+    <div class="wrap">
+        <div class="stats-row">
+            <div class="stat-item">
+                <strong>20+</strong>
+                <span>Years in Business</span>
+            </div>
+            <div class="stat-item">
+                <strong>100+</strong>
+                <span>Luxury Vehicles</span>
+            </div>
+            <div class="stat-item">
+                <strong>30+</strong>
+                <span>Locations</span>
+            </div>
+            <div class="stat-item">
+                <strong>5★</strong>
+                <span>Customer Rating</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- FLEET PREVIEW -->
+<section id="fleet-preview">
+    <div class="wrap">
+
+        <span class="section-label">Our Fleet</span>
+        <h2>Choose Your Experience</h2>
+
+        <div class="cards-3">
+
+            <!-- CARD 1 - SEDAN -->
+            <article class="car-card">
+                <div class="card-img-box">
+                    <img src="images/sedan1.jpg" alt="Luxury Sedan">
+                </div>
+                <!-- CSS3 reflect effect under image -->
+                <div class="reflect-row">
+                    <img src="images/sedan1.jpg" alt="" class="reflect-img">
+                </div>
+                <div class="card-info">
+                    <h3>Luxury Sedans</h3>
+                    <p>The perfect blend of comfort and performance for business or leisure travel.</p>
+                    <span class="card-price">From $299 / day</span>
+                    <a href="fleet.html" class="btn btn-outline btn-sm">View Sedans</a>
+                </div>
+            </article>
+
+            <!-- CARD 2 - CONVERTIBLE -->
+            <article class="car-card">
+                <div class="card-img-box">
+                    <img src="images/convertible1.jpg" alt="Luxury Convertible">
+                </div>
+                <div class="reflect-row">
+                    <img src="images/convertible1.jpg" alt="" class="reflect-img">
+                </div>
+                <div class="card-info">
+                    <h3>Convertibles</h3>
+                    <p>Feel the California sun with our top-down exotic convertible collection.</p>
+                    <span class="card-price">From $399 / day</span>
+                    <a href="fleet.html" class="btn btn-outline btn-sm">View Convertibles</a>
+                </div>
+            </article>
+
+            <!-- CARD 3 - SUV -->
+            <article class="car-card">
+                <div class="card-img-box">
+                    <img src="images/Luxury-SUV.jpg" alt="Luxury SUV">
+                </div>
+                <div class="reflect-row">
+                    <img src="images/Luxury-SUV.jpg" alt="" class="reflect-img">
+                </div>
+                <div class="card-info">
+                    <h3>Luxury SUVs</h3>
+                    <p>Spacious, powerful, and refined. Ideal for groups or family road trips.</p>
+                    <span class="card-price">From $349 / day</span>
+                    <a href="fleet.html" class="btn btn-outline btn-sm">View SUVs</a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="center-link">
+            <a href="fleet.html" class="btn btn-gold">View Full Fleet</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT STRIP - 3 column text (CSS3 column-count requirement) -->
+<section class="dark-section" id="about-strip">
+    <div class="wrap">
+
+        <span class="section-label">About LALU</span>
+        <h2>Why Choose Us</h2>
+
+        <!-- 3 columns on desktop, 2 on tablet, 1 on mobile -->
+        <div class="col3-text">
+
+            <div class="col-block">
+                <div class="col-icon">🏆</div>
+                <h3>Our Story</h3>
+                <p>Founded in 2000, LA Luxury Car Rental has been the go-to name for premium vehicle experiences in California. Two decades of excellence have made us the most trusted name in luxury car hire.</p>
+            </div>
+
+            <div class="col-block">
+                <div class="col-icon">✅</div>
+                <h3>Our Promise</h3>
+                <p>We guarantee you receive the exact vehicle you book. No substitutions, no surprises. We send photos of your specific car before your rental date so you know exactly what to expect.</p>
+            </div>
+
+            <div class="col-block">
+                <div class="col-icon">🚘</div>
+                <h3>Our Fleet</h3>
+                <p>Over 100 meticulously maintained exotic and luxury vehicles including Lamborghini, Ferrari, Porsche, Bentley, Range Rover, and more. Every car is serviced and inspected before each rental.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- GALLERY + LIGHTBOX -->
+<section id="gallery">
+    <div class="wrap">
+
+        <span class="section-label">Gallery</span>
+        <h2>Our Cars in Action</h2>
+
+        <div class="gallery-row">
+            <figure>
+                <img src="images/Lamborghini-Sunset.jpg" alt="Lamborghini on Sunset Boulevard" class="g-thumb" data-full="images/Lamborghini-Sunset.jpg">
+            </figure>
+            <figure>
+                <img src="images/Ferrari-at-the-beach.png" alt="Ferrari at the beach" class="g-thumb" data-full="images/Ferrari-at-the-beach.png">
+            </figure>
+            <figure>
+                <img src="images/Rolls-Royce-Beverly-Hills.png" alt="Rolls Royce in Beverly Hills" class="g-thumb" data-full="images/Rolls-Royce-Beverly-Hills.png">
+            </figure>
+            <figure>
+                <img src="images/Porsche-PCH.png" alt="Porsche on Pacific Coast Highway" class="g-thumb" data-full="images/Porsche-PCH.png">
+            </figure>
+            <figure>
+                <img src="images/Bentley-at-a-luxury-hotel.png" alt="Bentley at a luxury hotel" class="g-thumb" data-full="images/Bentley-at-a-luxury-hotel.png">
+            </figure>
+        </div>
+
+    </div>
+</section>
+
+<!-- LIGHTBOX OVERLAY -->
+<div class="lb-overlay hidden" id="lightbox">
+    <div class="lb-box">
+        <img id="lbImg" src="" alt="">
+        <p id="lbCaption"></p>
+    </div>
+    <button class="lb-close" id="lbClose">&#x2715;</button>
+    <button class="lb-arrow lb-l" id="lbPrev">&#8592;</button>
+    <button class="lb-arrow lb-r" id="lbNext">&#8594;</button>
+</div>
+
+
+<!-- VIDEO AND AUDIO (HTML5 multimedia requirement) -->
+<section class="dark-section" id="media">
+    <div class="wrap">
+
+        <span class="section-label">Media</span>
+        <h2>See and Hear the Experience</h2>
+
+        <div class="media-pair">
+
+            <!-- VIDEO -->
+            <div class="media-block">
+                <h3>Promo Video</h3>
+                <p class="media-note">Watch our fleet in action across Los Angeles.</p>
+                <video controls preload="metadata">
+                    <source src="video/promo.mp4" type="video/mp4">
+                    <p>Your browser does not support video. <a href="video/promo.mp4">Download the video</a>.</p>
+                </video>
+            </div>
+
+            <!-- AUDIO -->
+            <div class="media-block">
+                <h3>Brand Soundtrack</h3>
+                <p class="media-note">The sound of the LALU experience.</p>
+                <audio controls>
+                    <source src="audio/music.mp3" type="audio/mpeg">
+                    <p>Your browser does not support audio. <a href="audio/music.mp3">Download the audio</a>.</p>
+                </audio>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- LOCATIONS -->
+<section id="locations">
+    <div class="wrap">
+
+        <span class="section-label">Locations</span>
+        <h2>We Deliver Across the West</h2>
+        <p>Concierge delivery to your hotel, airport, or any address.</p>
+
+        <div class="loc-tags">
+            <span class="loc">Los Angeles</span>
+            <span class="loc">Beverly Hills</span>
+            <span class="loc">Hollywood</span>
+            <span class="loc">Santa Monica</span>
+            <span class="loc">Malibu</span>
+            <span class="loc">Las Vegas</span>
+            <span class="loc">San Francisco</span>
+            <span class="loc">San Diego</span>
+            <span class="loc">Phoenix</span>
+            <span class="loc">Scottsdale</span>
+            <span class="loc">Palm Springs</span>
+            <span class="loc">Newport Beach</span>
+        </div>
+
+    </div>
+</section>
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="wrap">
+
+        <div class="footer-cols">
+
+            <div class="f-col">
+                <div class="brand footer-brand">
+                    <div class="logo-box">LA</div>
+                    LA Luxury Car Rental
+                </div>
+                <p>Premium exotic car rentals since 2000. Serving California and the Western United States.</p>
+            </div>
+
+            <div class="f-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fleet.html">Our Fleet</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="f-col">
+                <h4>Fleet</h4>
+                <ul>
+                    <li><a href="fleet.html">Sedans</a></li>
+                    <li><a href="fleet.html">SUVs</a></li>
+                    <li><a href="fleet.html">Convertibles</a></li>
+                    <li><a href="fleet.html">Exotics</a></li>
+                </ul>
+            </div>
+
+            <div class="f-col">
+                <h4>Contact</h4>
+                <address>
+                    <p>📞 +1 (310) 555-0190</p>
+                    <p>✉ info@laluxurycar.com</p>
+                    <p>📍 Beverly Hills, CA 90210</p>
+                </address>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 LA Luxury Car Rental — All Rights Reserved</p>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- SCROLL TO TOP -->
+<button id="toTop" aria-label="Scroll to top">↑</button>
+
+
+<!-- JS FILE -->
+<script src="script.js"></script>
+
+</body>
+</html>

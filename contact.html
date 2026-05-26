@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact LA Luxury Car Rental - make an enquiry or book a vehicle.">
+
+<title>Contact - LA Luxury Car Rental</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="siteHeader">
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">
+            <div class="logo-box">LA</div>
+            LA Luxury Car Rental
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div id="siteNav">
+            <ul>
+                <li><a href="index.html"   data-page="index.html">Home</a></li>
+                <li><a href="fleet.html"   data-page="fleet.html">Fleet</a></li>
+                <li><a href="about.html"   data-page="about.html">About</a></li>
+                <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+
+
+<main>
+
+<!-- PAGE BANNER -->
+<div class="page-banner">
+    <div class="banner-bg"></div>
+    <div class="banner-text wrap">
+        <span class="section-label">Get In Touch</span>
+        <h1>Contact Us</h1>
+        <p>Our concierge team is available 7 days a week to assist with your enquiry.</p>
+    </div>
+</div>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <div class="wrap">
+
+        <div class="contact-layout">
+
+            <!-- FORM -->
+            <div class="form-wrap">
+
+                <h2>Send an Enquiry</h2>
+                <p class="form-sub">Fill in the form and we will get back to you within 2 hours.</p>
+
+                <div class="form-msg hidden" id="formMsg"></div>
+
+                <form id="contactForm">
+
+                    <div class="field">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Your full name">
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="your@email.com">
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+1 (000) 000-0000">
+                    </div>
+
+                    <div class="field">
+                        <label for="vehicle">Vehicle Type</label>
+                        <select id="vehicle">
+                            <option value="">Select vehicle type</option>
+                            <option value="sedan">Luxury Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="convertible">Convertible</option>
+                            <option value="exotic">Exotic</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="rentalDate">Rental Start Date</label>
+                        <input type="date" id="rentalDate">
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Tell us what you need..."></textarea>
+                    </div>
+
+                    <div class="field field-check">
+                        <input type="checkbox" id="agreeBox">
+                        <label for="agreeBox">I agree to the terms and conditions</label>
+                    </div>
+
+                </form>
+
+                <br>
+                <button class="btn btn-gold btn-full" id="submitBtn">Send Message</button>
+
+            </div>
+
+            <!-- CONTACT INFO CARDS -->
+            <aside class="contact-side">
+
+                <div class="c-card">
+                    <span class="c-icon">📞</span>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+13105550190">+1 (310) 555-0190</a></p>
+                    <p>Available 7 days, 8am–10pm PST</p>
+                </div>
+
+                <div class="c-card">
+                    <span class="c-icon">✉</span>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@laluxurycar.com">info@laluxurycar.com</a></p>
+                    <p>We reply within 2 hours</p>
+                </div>
+
+                <div class="c-card">
+                    <span class="c-icon">📍</span>
+                    <h3>Head Office</h3>
+                    <address>
+                        <p>9100 Wilshire Blvd</p>
+                        <p>Beverly Hills, CA 90210</p>
+                    </address>
+                </div>
+
+                <div class="c-card">
+                    <span class="c-icon">🚗</span>
+                    <h3>Delivery Service</h3>
+                    <p>We deliver to hotels, airports and private addresses across California.</p>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FAQ ACCORDION -->
+<section class="dark-section" id="faq">
+    <div class="wrap">
+
+        <span class="section-label">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-wrap">
+
+            <div class="faq-item">
+                <button class="faq-q" data-panel="faq1">Do I receive the exact vehicle I book?</button>
+                <div class="faq-a" id="faq1">
+                    <p>Yes. Our vehicle guarantee means you get the exact car you booked. We send photos of your specific vehicle before your rental date so you know exactly what to expect.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-q" data-panel="faq2">What is included in the rental price?</button>
+                <div class="faq-a hidden" id="faq2">
+                    <p>Every rental includes comprehensive insurance, 24/7 roadside assistance, and a full tank of fuel. Delivery and collection fees may apply depending on your location.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-q" data-panel="faq3">Can you deliver the car to my hotel or airport?</button>
+                <div class="faq-a hidden" id="faq3">
+                    <p>Yes. We offer concierge delivery to any hotel, airport terminal, or private address across California and our service areas. Just let us know your location in the enquiry form.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-q" data-panel="faq4">What is the minimum rental age?</button>
+                <div class="faq-a hidden" id="faq4">
+                    <p>The minimum age for standard vehicles is 25. For exotic models such as Lamborghini and Ferrari, the minimum age is 30 with a clean driving record. A valid driver's licence and credit card are required.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-q" data-panel="faq5">How far in advance should I book?</button>
+                <div class="faq-a hidden" id="faq5">
+                    <p>We recommend booking at least 2–3 days in advance for standard models and 1–2 weeks in advance for exotic or rare vehicles. Last-minute bookings may be possible — contact us to check availability.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="wrap">
+        <div class="footer-cols">
+            <div class="f-col">
+                <div class="brand footer-brand">
+                    <div class="logo-box">LA</div>
+                    LA Luxury Car Rental
+                </div>
+                <p>Premium exotic car rentals since 2000.</p>
+            </div>
+            <div class="f-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fleet.html">Our Fleet</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>Fleet</h4>
+                <ul>
+                    <li><a href="fleet.html">Sedans</a></li>
+                    <li><a href="fleet.html">SUVs</a></li>
+                    <li><a href="fleet.html">Convertibles</a></li>
+                    <li><a href="fleet.html">Exotics</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>Contact</h4>
+                <address>
+                    <p>📞 +1 (310) 555-0190</p>
+                    <p>✉ info@laluxurycar.com</p>
+                    <p>📍 Beverly Hills, CA 90210</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 LA Luxury Car Rental — All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<button id="toTop" aria-label="Scroll to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

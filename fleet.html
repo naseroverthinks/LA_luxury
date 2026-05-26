@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Browse our full fleet of exotic and luxury rental cars.">
+
+<title>Our Fleet - LA Luxury Car Rental</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="siteHeader">
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">
+            <div class="logo-box">LA</div>
+            LA Luxury Car Rental
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div id="siteNav">
+            <ul>
+                <li><a href="index.html"   data-page="index.html">Home</a></li>
+                <li><a href="fleet.html"   data-page="fleet.html">Fleet</a></li>
+                <li><a href="about.html"   data-page="about.html">About</a></li>
+                <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+
+
+<main>
+
+<!-- PAGE BANNER -->
+<div class="page-banner">
+    <div class="banner-bg"></div>
+    <div class="banner-text wrap">
+        <span class="section-label">Explore</span>
+        <h1>Our Fleet</h1>
+        <p>Over 100 exotic and luxury vehicles available for rental across California.</p>
+    </div>
+</div>
+
+
+<!-- FILTER BUTTONS -->
+<div class="filter-wrap">
+    <div class="wrap">
+        <div class="filter-btns">
+            <button class="f-btn active" data-filter="all">All Vehicles</button>
+            <button class="f-btn" data-filter="sedan">Sedans</button>
+            <button class="f-btn" data-filter="suv">SUVs</button>
+            <button class="f-btn" data-filter="convertible">Convertibles</button>
+            <button class="f-btn" data-filter="exotic">Exotics</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- VEHICLE CARDS -->
+<section id="vehicles">
+    <div class="wrap">
+
+        <p id="noResults" class="no-match hidden">No vehicles found for this category.</p>
+
+        <div class="vehicles-grid">
+
+            <!-- CARD 1 -->
+            <article class="v-card" data-category="sedan">
+                <div class="v-img">
+                    <img src="images/BMW-7-Series.jpg" alt="BMW 7 Series">
+                </div>
+                <div class="v-info">
+                    <span class="v-tag">Sedan</span>
+                    <h3>BMW 7 Series</h3>
+                    <ul class="v-specs">
+                        <li>V8 4.4L Engine</li>
+                        <li>5 Seats</li>
+                        <li>Automatic</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-gold btn-full">From $299/day</a>
+                </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="v-card" data-category="sedan">
+                <div class="v-img">
+                    <img src="images/Mercedes-S-Class.jpg" alt="Mercedes S-Class">
+                </div>
+                <div class="v-info">
+                    <span class="v-tag">Sedan</span>
+                    <h3>Mercedes S-Class</h3>
+                    <ul class="v-specs">
+                        <li>V8 4.0L Engine</li>
+                        <li>5 Seats</li>
+                        <li>Automatic</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-gold btn-full">From $320/day</a>
+                </div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="v-card" data-category="suv">
+                <div class="v-img">
+                    <img src="images/Range-Rover-Sport.jpg" alt="Range Rover Sport">
+                </div>
+                <div class="v-info">
+                    <span class="v-tag">SUV</span>
+                    <h3>Range Rover Sport</h3>
+                    <ul class="v-specs">
+                        <li>V8 5.0L Engine</li>
+                        <li>5 Seats</li>
+                        <li>4WD Automatic</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-gold btn-full">From $349/day</a>
+                </div>
+            </article>
+
+            <!-- CARD 4 -->
+            <article class="v-card" data-category="suv">
+                <div class="v-img">
+                    <img src="images/Cadillac-Escalade.jpg" alt="Cadillac Escalade">
+                </div>
+                <div class="v-info">
+                    <span class="v-tag">SUV</span>
+                    <h3>Cadillac Escalade</h3>
+                    <ul class="v-specs">
+                        <li>V8 6.2L Engine</li>
+                        <li>7 Seats</li>
+                        <li>Automatic</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-gold btn-full">From $379/day</a>
+                </div>
+            </article>
+
+            <!-- CARD 5 -->
+            <article class="v-card" data-category="convertible">
+                <div class="v-img">
+                    <img src="images/Porsche-911-Cabriolet.jpg" alt="Porsche 911 Cabriolet">
+                </div>
+                <div class="v-info">
+                    <span class="v-tag">Convertible</span>
+                    <h3>Porsche 911 Cabriolet</h3>
+                    <ul class="v-specs">
+                        <li>Flat-6 3.0L Engine</li>
+                        <li>2+2 Seats</li>
+                        <li>PDK Automatic</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-gold btn-full">From $499/day</a>
+                </div>
+            </article>
+
+            <!-- CARD 6 -->
+            <article class="v-card" data-category="convertible">
+                <div class="v-img">
+                    <img src="images/Bentley-Continental-GTC.jpg" alt="Bentley Continental GTC">
+                </div>
+                <div class="v-info">
+                    <span class="v-tag">Convertible</span>
+                    <h3>Bentley Continental GTC</h3>
+                    <ul class="v-specs">
+                        <li>W12 6.0L Engine</li>
+                        <li>4 Seats</li>
+                        <li>Automatic</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-gold btn-full">From $699/day</a>
+                </div>
+            </article>
+
+            <!-- CARD 7 -->
+            <article class="v-card" data-category="exotic">
+                <div class="v-img">
+                    <img src="images/Lamborghini-Huracan.jpg" alt="Lamborghini Huracan">
+                </div>
+                <div class="v-info">
+                    <span class="v-tag">Exotic</span>
+                    <h3>Lamborghini Huracan</h3>
+                    <ul class="v-specs">
+                        <li>V10 5.2L Engine</li>
+                        <li>2 Seats</li>
+                        <li>Dual-Clutch Auto</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-gold btn-full">From $1,299/day</a>
+                </div>
+            </article>
+
+            <!-- CARD 8 -->
+            <article class="v-card" data-category="exotic">
+                <div class="v-img">
+                    <img src="images/Ferrari-488-Spider.jpg" alt="Ferrari 488 Spider">
+                </div>
+                <div class="v-info">
+                    <span class="v-tag">Exotic</span>
+                    <h3>Ferrari 488 Spider</h3>
+                    <ul class="v-specs">
+                        <li>V8 3.9L Twin-Turbo</li>
+                        <li>2 Seats</li>
+                        <li>F1 Dual-Clutch</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-gold btn-full">From $1,499/day</a>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CTA BAND -->
+<div class="cta-band">
+    <div class="wrap">
+        <div class="cta-row">
+            <div>
+                <h2>Can't find what you need?</h2>
+                <p>Our team can source almost any luxury or exotic vehicle on request.</p>
+            </div>
+            <a href="contact.html" class="btn btn-gold">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="wrap">
+        <div class="footer-cols">
+            <div class="f-col">
+                <div class="brand footer-brand">
+                    <div class="logo-box">LA</div>
+                    LA Luxury Car Rental
+                </div>
+                <p>Premium exotic car rentals since 2000.</p>
+            </div>
+            <div class="f-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fleet.html">Our Fleet</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>Fleet</h4>
+                <ul>
+                    <li><a href="fleet.html">Sedans</a></li>
+                    <li><a href="fleet.html">SUVs</a></li>
+                    <li><a href="fleet.html">Convertibles</a></li>
+                    <li><a href="fleet.html">Exotics</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>Contact</h4>
+                <address>
+                    <p>📞 +1 (310) 555-0190</p>
+                    <p>✉ info@laluxurycar.com</p>
+                    <p>📍 Beverly Hills, CA 90210</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 LA Luxury Car Rental — All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<button id="toTop" aria-label="Scroll to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
